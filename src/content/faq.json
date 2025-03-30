@@ -1,0 +1,62 @@
+[
+	{
+		"id": "it-services-small-businesses",
+		"question": "What IT services do you offer for small businesses?",
+		"answer": "We provide comprehensive IT solutions including Technology Assessments, Help Desk Support, Systems Management, Desktop Support, Asset Management, Cloud Services (AWS/GCP), Desktop Virtualization, Project Management, and Security Assessments. Each service is tailored to help small businesses maximize efficiency while minimizing technology costs."
+	},
+	{
+		"id": "help-small-business-grow",
+		"question": "How can IT services help my small business grow?",
+		"answer": "Strategic IT services drive growth by reducing downtime, enhancing productivity, and enabling innovation. Our solutions streamline operations, strengthen security, and provide the flexibility needed to scale your business, allowing you to focus resources on core business activities rather than technology challenges."
+	},
+	{
+		"id": "technology-assessment-benefits",
+		"question": "What is a Technology Assessment, and how can it benefit my business?",
+		"answer": "A Technology Assessment is a comprehensive evaluation of your IT infrastructure that identifies strengths, weaknesses, and opportunities for improvement. This analysis helps prioritize technology investments, enhance security, optimize performance, and align your IT strategy with business goals, ultimately saving costs and preventing potential issues."
+	},
+	{
+		"id": "remote-work-support",
+		"question": "Do you offer support for remote or work-from-home employees?",
+		"answer": "Yes, we specialize in remote work solutions including secure VPN access, cloud-based applications, desktop virtualization, and collaborative tools. Our services ensure your team can work efficiently and securely from any location while maintaining access to essential business resources."
+	},
+	{
+		"id": "cloud-services",
+		"question": "What cloud services do you provide, and why should I move to the cloud?",
+		"answer": "We offer comprehensive cloud solutions through AWS and Google Cloud Platform (GCP). Moving to the cloud provides scalability, cost efficiency, enhanced collaboration, and improved disaster recovery. Our team handles migration, optimization, and ongoing management to ensure you maximize the benefits while minimizing disruption."
+	},
+	{
+		"id": "security-compliance",
+		"question": "How do you handle IT security and compliance requirements like HIPAA?",
+		"answer": "We implement multi-layered security strategies including network protection, endpoint security, data encryption, and access controls. For regulated industries, we design systems that meet specific compliance requirements like HIPAA, ensuring proper data handling, security protocols, and documentation to protect sensitive information and satisfy regulatory obligations."
+	},
+	{
+		"id": "difference-from-others",
+		"question": "What makes Sonoran IT Solutions different from other IT consulting firms?",
+		"answer": "Our difference lies in our personalized approach to small business IT. We combine local Phoenix-area presence with deep technical expertise, offering customized solutions rather than one-size-fits-all packages. We focus on building long-term relationships, providing responsive support, and delivering enterprise-grade technology at small business prices."
+	},
+	{
+		"id": "flexible-support-plans",
+		"question": "Do you offer flexible IT support plans?",
+		"answer": "Yes, we offer customizable support plans ranging from project-based work to comprehensive managed services. We'll work with you to create a solution that addresses your specific needs and budget, whether that's supplementing your existing IT team or providing complete outsourced IT management."
+	},
+	{
+		"id": "desktop-virtualization",
+		"question": "What is desktop virtualization, and how can it help my business?",
+		"answer": "Desktop virtualization creates secure, centralized digital workspaces accessible from any device. This technology reduces hardware costs, simplifies IT management, enhances security, and enables seamless remote work. It's particularly valuable for businesses with remote teams or those looking to extend the life of existing hardware."
+	},
+	{
+		"id": "ai-technologies",
+		"question": "How can AI technologies improve my business operations?",
+		"answer": "AI technologies can transform operations by automating routine tasks, analyzing data for actionable insights, enhancing customer experiences, and identifying patterns that humans might miss. We help implement practical AI solutions that deliver measurable benefits without unnecessary complexity or expense."
+	},
+	{
+		"id": "it-project-management",
+		"question": "Can you help with planning and managing IT projects?",
+		"answer": "Absolutely. We provide end-to-end project management services from initial planning and budgeting through implementation and evaluation. Whether you're upgrading infrastructure, migrating to the cloud, or implementing new systems, our structured approach ensures projects are completed on time, within budget, and with minimal disruption."
+	},
+	{
+		"id": "getting-started",
+		"question": "How do I get started with Sonoran IT Solutions?",
+		"answer": "Getting started is simple. Contact us to schedule a free consultation where we'll discuss your business needs, current challenges, and goals. We'll then develop a tailored proposal outlining recommended solutions, implementation timelines, and investment requirements. Once approved, we'll execute the plan with clear communication every step of the way."
+	}
+]

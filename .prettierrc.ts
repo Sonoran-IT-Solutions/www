@@ -1,6 +1,6 @@
-// @ts-check
-/** @type {import("prettier").Config} */
-export default {
+import { type Config } from "prettier";
+
+const config: Config = {
 	plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
 	useTabs: true,
 	overrides: [
@@ -12,3 +12,5 @@ export default {
 		},
 	],
 };
+
+export default config;

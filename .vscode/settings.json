@@ -12,14 +12,14 @@
 	"eslint.format.enable": true,
 	"eslint.lintTask.enable": true,
 	"eslint.nodePath": "node_modules",
-	"eslint.useESLintClass": true,
-	"eslint.useFlatConfig": false,
+	"eslint.useFlatConfig": true,
 	"eslint.validate": [
 		"javascript",
 		"javascriptreact",
 		"astro",
 		"typescript",
-		"typescriptreact"
+		"typescriptreact",
+		"tsx"
 	],
 	"typescript.tsdk": "node_modules/typescript/lib"
 }

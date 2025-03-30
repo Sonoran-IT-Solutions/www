@@ -1,13 +1,18 @@
 {
 	"extends": "astro/tsconfigs/strict",
-	"include": [".astro/types.d.ts", "**/*", ".commitlintrc.ts"],
+	"include": [
+		".astro/types.d.ts",
+		"**/*",
+		".commitlintrc.ts",
+		".prettierrc.ts"
+	],
 	"exclude": ["dist"],
 	"compilerOptions": {
 		"baseUrl": ".",
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
 		"paths": {
-			"@/*": ["./*"]
+			"@/*": ["./src/*"]
 		}
 	}
 }

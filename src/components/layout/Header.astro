@@ -1,0 +1,152 @@
+---
+import { Image } from "astro:assets";
+
+import logo from "../../assets/logo.png";
+import { siteConfig } from "../../config/site";
+---
+
+<header
+	class="bg-background sticky top-0 z-50 w-full border-b backdrop-blur-sm transition-all duration-200"
+>
+	<div
+		class="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0"
+	>
+		<div class="flex items-center gap-2">
+			<a href="/" class="flex items-center space-x-2">
+				<Image
+					src={logo}
+					alt={siteConfig.name}
+					loading="eager"
+					width={40}
+					height={40}
+					class="h-10 w-auto"
+				/>
+				<span class="text-primary hidden font-bold sm:inline-block"
+					>{siteConfig.name}</span
+				>
+			</a>
+		</div>
+		<div class="flex flex-1 items-center justify-end space-x-4">
+			<nav class="hidden items-center space-x-2 md:flex">
+				{
+					siteConfig.navItems.map((item) => (
+						<a
+							href={item.href}
+							class="hover:text-primary px-4 py-2 text-sm font-medium transition-colors"
+						>
+							{item.label}
+						</a>
+					))
+				}
+				<a href="/contact">
+					<button
+						class="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2 text-sm font-medium"
+					>
+						Contact Us
+					</button>
+				</a>
+			</nav>
+			<button
+				id="mobile-menu-toggle"
+				class="px-0 text-base hover:bg-transparent md:hidden"
+			>
+				<span class="sr-only">Toggle Menu</span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="h-6 w-6"
+				>
+					<line x1="4" x2="20" y1="12" y2="12"></line>
+					<line x1="4" x2="20" y1="6" y2="6"></line>
+					<line x1="4" x2="20" y1="18" y2="18"></line>
+				</svg>
+			</button>
+		</div>
+	</div>
+</header>
+
+<div
+	id="mobile-menu"
+	class="bg-background/95 fixed inset-y-0 right-0 z-50 w-full max-w-xs translate-x-full transform border-l backdrop-blur-sm transition-transform duration-300 ease-in-out"
+>
+	<div class="flex h-full flex-col">
+		<div class="flex items-center justify-between px-7 py-6">
+			<a href="/" class="flex items-center space-x-2">
+				<Image
+					src={logo}
+					alt={siteConfig.name}
+					width={40}
+					height={40}
+					class="h-8 w-auto"
+				/>
+				<span class="text-primary font-bold">{siteConfig.name}</span>
+			</a>
+			<button id="mobile-menu-close" class="text-base">
+				<span class="sr-only">Close Menu</span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="h-6 w-6"
+				>
+					<path d="M18 6 6 18"></path>
+					<path d="m6 6 12 12"></path>
+				</svg>
+			</button>
+		</div>
+		<nav class="mt-8 flex flex-col gap-4 px-7">
+			{
+				siteConfig.navItems.map((item) => (
+					<a
+						href={item.href}
+						class="hover:text-primary text-lg font-medium transition-colors"
+					>
+						{item.label}
+					</a>
+				))
+			}
+
+			<a
+				href="/contact"
+				class="hover:text-primary text-lg font-medium transition-colors"
+			>
+				Contact
+			</a>
+			<a href="/contact" class="mt-4">
+				<button
+					class="bg-primary text-primary-foreground hover:bg-primary/90 w-full rounded-md px-4 py-2 text-sm font-medium"
+					>Contact Us</button
+				>
+			</a>
+		</nav>
+	</div>
+</div>
+
+<script>
+	const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+	const mobileMenuClose = document.getElementById("mobile-menu-close");
+	const mobileMenu = document.getElementById("mobile-menu");
+
+	if (mobileMenuToggle && mobileMenuClose && mobileMenu) {
+		mobileMenuToggle.addEventListener("click", () => {
+			mobileMenu.classList.toggle("translate-x-full");
+		});
+
+		mobileMenuClose.addEventListener("click", () => {
+			mobileMenu.classList.add("translate-x-full");
+		});
+	}
+</script>
