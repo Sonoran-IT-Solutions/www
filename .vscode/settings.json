@@ -1,0 +1,25 @@
+{
+	"astro.content-intellisense": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always",
+		"source.fixAll.ts": "always"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"eslint.debug": true,
+	"eslint.enable": true,
+	"eslint.format.enable": true,
+	"eslint.lintTask.enable": true,
+	"eslint.nodePath": "node_modules",
+	"eslint.useESLintClass": true,
+	"eslint.useFlatConfig": false,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"astro",
+		"typescript",
+		"typescriptreact"
+	],
+	"typescript.tsdk": "node_modules/typescript/lib"
+}
